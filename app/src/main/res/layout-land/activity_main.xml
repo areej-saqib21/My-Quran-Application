@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="202dp"
+        android:layout_below="@+id/btnRep"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-20dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="563dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="62dp"
+        android:text="Open Repository" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Verse"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="375dp"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/Verse"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVerse"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="-33dp"
+        android:layout_marginEnd="212dp"
+        android:layout_toEndOf="@+id/txtVerse"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtVerse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Surah"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter Verse Number"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Surah"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@id/txtSurah"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="-42dp"
+        android:layout_marginEnd="219dp"
+        android:layout_toEndOf="@+id/txtSurah"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtSurah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="18dp"
+        android:text="Enter Surah Number"
+        android:textSize="18sp" />
+</RelativeLayout>
+</ScrollView>
